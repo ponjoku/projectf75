@@ -1,0 +1,42 @@
+---
+title: "Projectf75"
+author: "Aigerim, Peace, Pavithra, Hasna"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Description
+
+
+```{r table1 one }
+summary(cars)
+```
+
+## Correlation
+
+You can also embed plots, for example:
+
+```{r figure one, echo=FALSE}
+plot(pressure)
+```
+
+## MUAC
+
+You can also embed plots, for example:
+
+```{r figure two, echo=FALSE}
+plot(pressure)
+```
+
+
+## OUTCOMES
+
+You can also embed plots, for example:
+
+```{r table two, echo=FALSE}
+plot(pressure)
+```

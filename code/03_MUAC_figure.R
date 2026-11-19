@@ -103,8 +103,6 @@ figure_nutrition <- ggplot(
 print(figure_nutrition)
 
 
-
-
 # Save output
 
 ggsave(

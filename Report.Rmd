@@ -1,10 +1,10 @@
 ---
 title: "Projectf75"
-author: "Aigerim, Peace, Pavithra, Hasna"
+author: "Aigerim, Peace Njoku, Pavithra, Hasna Alghamdi"
 date: "`r Sys.Date()`"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -20,7 +20,6 @@ library(gtsummary)
 table_one <- readRDS(here::here("output", "table_one.rds"))
 table_one
 ```
-```
 
 ## Correlation
 
@@ -28,7 +27,6 @@ You can also embed plots, for example:
 
 ```{r correlation heatmap, echo=FALSE, message=FALSE, warning=FALSE}
 source(here::here("code", "02_correlation_map.R"))
-
 ```
 
 ## Changes in Nutritional Measurements
@@ -44,8 +42,12 @@ knitr::include_graphics(
 
 ## OUTCOMES
 
-You can also embed plots, for example:
+Table 2 compares how children in each treatment arm did by the end of the study. Most children in both arms were discharged, 74% in the modified F75 arm and 80%
+in the discharged F75 arm. Deaths were more common in the modified F75 arm (17%) than i nthe standard F75 arm (12%). Withdrawals were similar between arms, among children who stabilized, time to stabilization was similar in both arms. Because these are interim data from the first 6 months of the trial, these patterns are
+descriptive and are not final results.
 
-```{r table two, echo=FALSE}
-plot(pressure)
+```{r, table-two, echo=FALSE}
+table_two <- readRDS(here::here("output/table_two.rds"))
+table_two
 ```
+

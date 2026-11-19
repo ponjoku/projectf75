@@ -24,12 +24,14 @@ You can also embed plots, for example:
 plot(pressure)
 ```
 
-## MUAC
+## Changes in Nutritional Measurements
 
-You can also embed plots, for example:
+The figure shows mean MUAC and weight at baseline, stabilization, and discharge for children randomized to modified F75 or standard F75. Mean MUAC increased in both groups, while weight showed different patterns across measurements. The means are based on available measurements at each occasion, so the lines do not necessarily represent within-child changes.
 
 ```{r figure two, echo=FALSE}
-plot(pressure)
+knitr::include_graphics(
+  here::here("output", "muac.png")
+)
 ```
 
 

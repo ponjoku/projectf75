@@ -2,7 +2,9 @@
 title: "Projectf75"
 author: "Aigerim, Peace, Pavithra, Hasna"
 date: "`r Sys.Date()`"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -12,8 +14,12 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Description
 
 
-```{r table1 one }
-summary(cars)
+
+```{r table-one, echo=FALSE}
+library(gtsummary)
+table_one <- readRDS(here::here("output", "table_one.rds"))
+table_one
+```
 ```
 
 ## Correlation
